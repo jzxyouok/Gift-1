@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/login_close_iv"
+    android:src="@mipmap/btn_close"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/login_username_iv"
+            android:src="@mipmap/icon_cellphone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fourty" />
+        <EditText
+            android:id="@+id/login_username_et"
+            android:layout_toRightOf="@id/login_username_iv"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_alignBottom="@id/login_username_iv"
+            android:layout_width="@dimen/two_hundred"
+            android:layout_height="@dimen/fourty" />
+        <ImageView
+            android:id="@+id/login_userpwd_iv"
+            android:layout_below="@id/login_username_iv"
+            android:layout_marginTop="@dimen/five"
+            android:src="@mipmap/icon_password"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fourty" />
+        <EditText
+            android:id="@+id/login_userpwd_et"
+            android:layout_toRightOf="@id/login_userpwd_iv"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_alignBottom="@id/login_userpwd_iv"
+            android:password="true"
+            android:numeric="integer"
+            android:layout_width="@dimen/two_hundred"
+            android:layout_height="@dimen/fourty" />
+        <Button
+            android:id="@+id/login_login_bt"
+            android:layout_below="@id/login_userpwd_iv"
+            android:text="登陆"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorwhite"
+            android:layout_alignLeft="@id/login_userpwd_iv"
+            android:layout_alignRight="@id/login_userpwd_et"
+            android:background="@drawable/img_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/login_register_bt"
+            android:layout_below="@id/login_login_bt"
+            android:text="注册"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorwhite"
+            android:layout_alignLeft="@id/login_userpwd_iv"
+            android:layout_alignRight="@id/login_userpwd_et"
+            android:background="@drawable/img_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

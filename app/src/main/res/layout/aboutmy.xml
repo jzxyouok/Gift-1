@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/aboutme_top_rl"
+    android:layout_weight="3"
+    android:background="@mipmap/bg_tour"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <RelativeLayout
+        android:id="@+id/aboutme_top_one_set_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/aboutme_set_message_iv"
+            android:src="@mipmap/icon_message"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/aboutme_set_set_iv"
+            android:src="@mipmap/me_settings"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/aboutme_set_scan_iv"
+            android:src="@mipmap/icon_scan"
+            android:layout_toLeftOf="@+id/aboutme_set_set_iv"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/aboutme_head"
+        android:src="@mipmap/me_avatar_boy"
+        android:layout_centerInParent="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:id="@+id/aboutme_username"
+        android:layout_below="@+id/aboutme_head"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="未登录"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/aboutme_bottom_rl"
+        android:background="@mipmap/bg_tour"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></RelativeLayout>
+</LinearLayout>
